@@ -1,0 +1,157 @@
+body{
+	padding : 1;
+	margin : 1;
+	border : 0;
+	background: url(img/Background1.png);
+}
+ 
+.blended_grid{
+	display : block;
+	width : 1000px;
+	overflow : auto;
+	margin : 30px auto 0 auto;
+	border-radius: 10px;
+}
+
+.pageHeader{
+	background6: url(PanoramaHead.jpg);
+	float : left;
+	clear : none;
+	height : 200px;
+	width : 1000px;
+}
+
+
+.pageLeftMenu{
+	background-color : rgba(0, 0, 0, 0.5);
+	float : left;
+	clear : none;
+	height : 680px;
+	width : 200px;
+}
+
+
+.pageContent{
+	background-color : rgba(0, 0, 0, 0.5);
+	float : left;
+	clear : none;
+	height : 680px;
+	width : 800px;
+	padding: ;
+}
+
+
+.pageFooter{
+	background-color : rgba(0, 0, 0, 0.5);
+	float : left;
+	clear : none;
+	height : 50px;
+	width : 1000px;
+}
+
+/* CSS Meny, olika inställningar */
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+
+#meny li {
+	list-style: none;
+	margin: 5px 0 10px 0;
+}
+
+
+#meny li a {
+	display: block;
+	width: 170px;
+	margin: 0;
+	padding: 5px 10px 5px 10px;
+	text-align: center;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	color: #303030;
+	border-radius: 5px;
+	border: 1px solid #ff6600;
+	background: #303030;
+	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.3), 0 2px 3px rgba(0,0,0,0.70);
+}
+
+
+#meny li a:hover {
+	cursor: pointer;
+	background: #ff6600;
+	color: white;
+}
+
+
+#meny a:link, #meny a:visited {
+	color: rgba(255,255,255,1);
+	text-decoration: none;
+}
+
+
+#meny a:active {
+	color: #ff6600;
+}
+
+
+#meny a#current {
+	background: rgba(85,137,48,1);
+}
+
+
+/* Länkar visas som vanlig text */
+a {
+	text-decoration: none;
+}
+
+/* Text under bild i Lightbox */
+#bildtext {
+	text-align: center;
+	font: Arial;
+	font-size: 20px;
+	color: white;
+}
+
+/* Bilder */
+.thumb {
+	max-width: 60%;
+	max-height: 60%;
+ }
+ 
+ #photos {
+	 line-height: 5;
+	 column-count: 4;
+ }
+ 
+ #photos img {
+	 width: 186px;
+	 height: 60px;
+ }
+
+/* Lightbox "Gallery" */
+.lightbox {
+	display: none;
+	
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.6);
+}
+
+/* Bild i Lightbox */
+.lightbox img {
+	max-width: 100%;
+	max-height: 100%;
+	margin-top: 15%;
+}
+
+/*  */
+.lightbox:target {
+	outline: none;
+	display: block;
+}
