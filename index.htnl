@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="layout3.css">
+<title>Hem</title>
+</head>
+
+<body>
+<div class="blended_grid">
+<div class="pageHeader">
+
+<a href="index.html"><img src="img/PanoramaHead.jpg"></a>
+
+</div>
+<div class="pageLeftMenu">
+
+<ul id="meny">
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <li><a href="index.html">Hem</a></li><br><br>
+ <li><a href="gymnasiearbete.html">Gymnasiearbete</a></li><br><br>
+ <li><a href="modellflyg.html">Modellflyg</a></li><br><br>
+ <li><a href="bilder.html">Bilder</a></li><br><br>
+ <li><a href="om.html">Om</a></li><br><br>
+ </ul>
+
+</div>
+<div class="pageContent">
+
+<center>
+<h1><font color="#ff6600" size="16px"> Välkommen! </font></h1>
+
+<br>
+
+<p><font color="white" size="4px"> Tjena! Jag heter Hampus och är 18 år. Det här är min hemsida. </font></p>
+<p><font color="white" size="4px"> Jag är bland annat intresserad av bilar. Speciellt Superbilar till exempel Jon Olssons Lamborghini </font></p>
+
+<br>
+<br>
+<br>
+
+<img src="img/CasaLambo.png">
+<p><font color="white"> <i> Jon Olsson, Lamborghini Huracan 2016 Camo Edition </i> </font></p>
+</center>
+
+</div>
+<div class="pageFooter">
+
+<center>
+<p><font color="white"> Kullagymnasiet Teknikprogrammet </p>
+</center>
+
+</div>
+</div>
+
+
+</body>
+</html>
