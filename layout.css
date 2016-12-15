@@ -62,11 +62,20 @@ h1 {
 
 /* CSS Meny, olika inställningar */
 ul {
+	list-style-type: none;
 	margin: auto;
 	padding: 0;
+	position: absolute;
+}
+	  
+li {
+	display: inline-block;
+	float: left;
+	margin-right: 1px;
 }
 
-
+/* anpassa för mobilen i (#meny li a) */
+	  
 #meny li a {
 	display: block;
 	width: 60px;
