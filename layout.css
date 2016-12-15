@@ -9,7 +9,7 @@ body{
 
 /* Portrait and Landscape */
 @media screen only 
-  and (min-device-width: 375px) 
+  and (min-device-width: 300px) 
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
 
@@ -78,7 +78,7 @@ li {
 	  
 #meny li a {
 	display: block;
-	width: 60px;
+	min-width: 60px;
 	margin: auto;
 	padding: 5px 10px 5px 10px;
 	text-align: center;
