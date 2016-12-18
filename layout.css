@@ -34,7 +34,7 @@ body{
 	background-color : rgba(0, 0, 0, 0.5);
 	float : left;
 	clear : none;
-	height : 680px;
+	height : 50px;
 	width : 200px;
 }
 
@@ -44,8 +44,7 @@ body{
 	float : left;
 	clear : none;
 	height : 680px;
-	width : 800px;
-	position: absolute;
+	width : 1000px;
 }
 
 
@@ -101,6 +100,7 @@ li {
 /* Länkar visas som vanlig text */
 a {
 	text-decoration: none;
+	cursor: pointer;
 }
 
 /* Text under bild i Lightbox */
