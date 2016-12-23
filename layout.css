@@ -9,8 +9,8 @@ body{
 
 /* Portrait and Landscape */
 @media screen only 
-  and (min-device-width: 300px) 
-  and (max-device-width: 667px) 
+  and (min-device-width: 100px) 
+  and (max-device-width: 700px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
 
 
@@ -25,7 +25,7 @@ body{
 .pageHeader{
 	float : left;
 	clear : none;
-	height : 200px;
+	height : 133px;
 	width : 1000px;
 }
 
@@ -34,8 +34,8 @@ body{
 	background-color : rgba(0, 0, 0, 0.5);
 	float : left;
 	clear : none;
-	height : 50px;
-	width : 200px;
+	height : 40px;
+	width : 1000px;
 }
 
 
@@ -60,30 +60,33 @@ h1 {
 	font-size: 8px;
 }
 
-/* CSS Meny, olika inställningar */
-ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 5px;
-	overflow: hidden;
-	background-color: #303030;
-    border-radius: 5px;
-}
-	  
-li {
+/* CSS Meny Inställningar */
+
+
+#meny {
+	list-style: none;
+	font-weight: bold;
+	margin-bottom: 10px;
 	float: left;
+	width: 100%;
+	position: relative;
+	z-index: 5;
 }
 
-/* anpassa för mobilen i (#meny li a) */
+#meny li {
+	float: left;
+	margin-right: 10px;
+	position: relative;
+}
 	  
-#meny li a {
+#meny a {
 	display: block;
 	text-align: center;
 	font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
 	color: white;
 	background: #303030;
-    border-radius: 4px;
-    padding: 1;
+    padding: 10px;
+	text-decoration: none;
 }
 
 
@@ -91,6 +94,43 @@ li {
 	cursor: pointer;
 	background: #ff6600;
 	color: white;
+	text-decoration: none;
+}
+
+/* DROPDOWN */
+
+#meny ul {
+	background: #303030; /* Byter BakgrundsFärg på Huvudkategori */
+	background: rgba(255, 255, 255, 0);
+	list-style: none;
+	position: absolute;
+	left: -9999px;	/* När DROPDOWN inte används är den placerad långt utanför skärmen */
+}
+
+#meny ul li {
+	padding-top: 10px;
+	float: none;
+}
+
+#meny ul a {
+	white-space: nowrap; /* Gör så att texten inte byter rad */
+}
+
+#meny li:hover ul {
+	left: 0;
+}
+
+#meny li:hover a {
+	background: #ff6600; /* Byter Färg på Huvudkategori (på :hover) */
+	text-decoration: none;
+}
+
+#meny li:hover ul a {
+	text-decoration: none;
+}
+
+#meny li:hover ul li a:hover {
+	background: #303030; /* Byter Färg på Underkategori (på :hover) */
 }
 
 } /* slutTag Horizontel Mobil Meny */

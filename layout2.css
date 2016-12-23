@@ -28,12 +28,12 @@ body{
 }
 
 
-.pageLeftMenu{
+.pageHorizontalMenu{
 	background-color : rgba(0, 0, 0, 0.5);
 	float : left;
 	clear : none;
-	height : 680px;
-	width : 200px;
+	height : 60px;
+	width : 1000px;
 }
 
 
@@ -42,8 +42,7 @@ body{
 	float : left;
 	clear : none;
 	height : 680px;
-	width : 800px;
-	padding: ;
+	width : 1000px;
 }
 
 
@@ -55,36 +54,41 @@ body{
 	width : 1000px;
 }
 
+
+
+
+
 h1 {
 	font-size: 8px;
 }
 
-/* CSS Meny, olika inställningar */
-ul {
-	margin: 0;
-	padding: 0;
-}
+/* CSS Meny Inställningar */
 
+
+#meny {
+	list-style: none;
+	font-weight: bold;
+	margin-bottom: 10px;
+	float: left;
+	width: 100%;
+	position: relative;
+	z-index: 5;
+}
 
 #meny li {
-	list-style: none;
-	margin: 5px 0 10px 0;
+	float: left;
+	margin-right: 10px;
+	position: relative;
 }
-
-
-#meny li a {
+	  
+#meny a {
 	display: block;
-	width: 170px;
-	margin: 0;
-	padding: 5px 10px 5px 10px;
 	text-align: center;
 	font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
-	font-size: 16px;
-	color: #303030;
-	border-radius: 5px;
-	border: 1px solid #ff6600;
+	color: white;
 	background: #303030;
-	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.3), 0 2px 3px rgba(0,0,0,0.70);
+    padding: 10px;
+	text-decoration: none;
 }
 
 
@@ -92,28 +96,53 @@ ul {
 	cursor: pointer;
 	background: #ff6600;
 	color: white;
-}
-
-
-#meny a:link, #meny a:visited {
-	color: rgba(255,255,255,1);
 	text-decoration: none;
 }
 
+/* DROPDOWN */
 
-#meny a:active {
-	color: #ff6600;
+#meny ul {
+	background: #303030; /* Byter BakgrundsFärg på Huvudkategori */
+	background: rgba(255, 255, 255, 0);
+	list-style: none;
+	position: absolute;
+	left: -9999px;	/* När DROPDOWN inte används är den placerad långt utanför skärmen */
 }
 
-
-#meny a#current {
-	background: rgba(85,137,48,1);
+#meny ul li {
+	padding-top: 10px;
+	float: none;
 }
+
+#meny ul a {
+	white-space: nowrap; /* Gör så att texten inte byter rad */
+}
+
+#meny li:hover ul {
+	left: 0;
+}
+
+#meny li:hover a {
+	background: #ff6600; /* Byter Färg på Huvudkategori (på :hover) */
+	text-decoration: none;
+}
+
+#meny li:hover ul a {
+	text-decoration: none;
+}
+
+#meny li:hover ul li a:hover {
+	background: #303030; /* Byter Färg på Underkategori (på :hover) */
+}
+
+} /* slutTag Horizontel Laptop Meny */
+
 
 
 /* Länkar visas som vanlig text */
 a {
 	text-decoration: none;
+	cursor: pointer;
 }
 
 /* Text under bild i Lightbox */
