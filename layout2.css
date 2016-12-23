@@ -15,7 +15,7 @@ body{
 .blended_grid{
 	display : block;
 	width : 1000px;
-	overflow : auto;
+	overflow : hidden;
 	margin : 30px auto 0 auto;
 	border-radius: 10px;
 }
@@ -32,7 +32,7 @@ body{
 	background-color : rgba(0, 0, 0, 0.5);
 	float : left;
 	clear : none;
-	height : 60px;
+	height : 70px;
 	width : 1000px;
 }
 
