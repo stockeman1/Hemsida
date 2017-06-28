@@ -13,7 +13,7 @@ body{
 	
 .blended_grid{
 	display : block;
-	width : 1000px;
+	width : 80%;
 	overflow : hidden;
 	margin : 30px auto 0 auto;
 	border-radius: 10px;
@@ -23,7 +23,7 @@ body{
 	float : left;
 	clear : none;
 	height : 200px;
-	width : 1000px;
+	width : 80%;
 }
 
 
@@ -32,7 +32,7 @@ body{
 	float : left;
 	clear : none;
 	height : 70px;
-	width : 1000px;
+	width : 80%;
 }
 
 
@@ -41,7 +41,7 @@ body{
 	float : left;
 	clear : none;
 	height : 680px;
-	width : 1000px;
+	width : 80%;
 }
 
 
@@ -50,7 +50,7 @@ body{
 	float : left;
 	clear : none;
 	height : 50px;
-	width : 1000px;
+	width : 80%;
 }
 
 h1 {
